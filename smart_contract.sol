@@ -16,7 +16,7 @@ contract RentalManagement {
         rentals.push(Rental(rentalId, msg.sender, _details, true));
     }
 
-    function getRental(uint _id) public view returns (Rental memory) {
+    function fetchRental(uint _id) public view returns (Rental memory) {
         require(_id < rentals.length, "Rental does not exist.");
         return rentals[_id];
     }
