@@ -20,4 +20,8 @@ contract RentalManagement {
         require(_id < rentals.length, "Rental does not exist.");
         return rentals[_id];
     }
+
+    function getTotalRentals() public view returns (uint) {
+        return rentals.length;
+    }
 }
