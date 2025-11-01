@@ -5,7 +5,7 @@ const PORT = 3000;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.send('Chào mừng đến với Hệ Thống Quản Lý Nhà Trọ!');
+  res.send('Chào mừng đến với Hệ thống Quản lý Nhà trọ!');
 });
 
 app.listen(PORT, () => {
