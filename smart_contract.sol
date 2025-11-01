@@ -9,7 +9,7 @@ contract RentalManagement {
         bool isAvailable;
     }
     
-    Rental[] public rentals;
+    Rental[] internal rentals;
 
     function registerRental(string memory _details) public {
         uint rentalId = rentals.length;
