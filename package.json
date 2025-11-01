@@ -1,0 +1,16 @@
+{
+  "name": "he-thong-quan-ly-nha-trang",
+  "version": "1.0.0",
+  "description": "Hệ thống quản lý nhà trọ dựa trên công nghệ blockchain",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "web3": "^1.5.0"
+  }
+}
