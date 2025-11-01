@@ -11,9 +11,12 @@ contract RentalManagement {
     
     Rental[] internal rentals;
 
+    event RentalRegistered(uint id, address owner, string details, bool isAvailable);
+
     function registerRental(string memory _details) public {
         uint rentalId = rentals.length;
         rentals.push(Rental(rentalId, msg.sender, _details, true));
+        emit RentalRegistered(rentalId, msg.sender, _details, true);
     }
 
     function fetchRental(uint _id) public view returns (Rental memory) {
